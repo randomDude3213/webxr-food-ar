@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AR Food Menu</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background: #f8f8f8;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+
+    .menu-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .food-item {
+      background: #fff;
+      border-radius: 8px;
+      padding: 10px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+      text-align: center;
+    }
+
+    .food-item img {
+      width: 100%;
+      height: auto;
+      border-radius: 6px;
+    }
+
+    .food-item p {
+      margin: 10px 0 0;
+      font-weight: bold;
+      color: #555;
+    }
+
+    a[rel="ar"] {
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>AR Food Menu 🍔🍣🍕</h1>
+
+  <div class="menu-grid">
+    <a href="assets/cake.usdz" rel="ar" quicklook-browsing class="food-item">
+      <img src="assets/strawberrycake.jpg" alt="Burger" />
+      <p>Burger</p>
+    </a>
+    <a href="assets/coffee.usdz" rel="ar" quicklook-browsing class="food-item">
+      <img src="assets/coffee.usdz" alt="Pizza" />
+      <p>Pizza</p>
+    </a>
+  </div>
+
+</body>
+</html>
